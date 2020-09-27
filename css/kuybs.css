@@ -1,0 +1,207 @@
+/*-- Body Reset --*/
+body {
+  overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+  color: #616971;
+}
+
+p {
+  font-size: 14px;
+}
+
+.btn {
+  background: #FF877D;
+}
+
+.secondary {
+  background: #D9D9D9;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.card {
+  box-shadow: 0px 8px 15px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.tigakotak img{
+  height: 120px;
+  margin: 10px 45px;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  min-height: 200px;
+}
+
+.tigakotak a{
+  margin-top: auto;
+  width: 100px;
+  align-self: center;
+}
+
+.jumlah {
+  /* width: 750px; */
+  margin: 0 auto;
+  background: #FF877D;
+}
+
+.row > div.separator:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -2px;
+  top: 25%;
+  width: 2px;
+  height: 50%;
+  background: #fff;
+}
+
+.daftar {
+  margin: 150px 0px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.con {
+  width: 40px;
+  height: 40px;
+}
+
+
+.images{
+  padding: 5px 50px;
+}
+
+footer div.container {
+  max-width: 1280px !important;
+}
+
+.social-media {
+  padding-left: 0 !important;
+}
+.social-media li {
+  margin-right: 10px
+}
+.display-ib {
+  display: inline-block;
+}
+
+
+
+/* star */
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+/* star end */
+
+
+
+/*============= FOOTER =============*/
+
+
+
+/* Devices under 1199px (xl) */
+@media (max-width: 1199.98px) {
+
+}
+/* Devices under 768px (md) */
+@media (max-width: 767.98px) {
+
+}
+
+@media (min-width: 992px) {
+  .jumlah {
+    width: 750px;
+  }
+}
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+/*-- Bootstrap Mobile Gutter Fix --*/
+.row, .container-fluid {
+  margin-left: 0px !important;
+  /* margin-right: 0px !important; */
+}
+
+/*-- Fixed Background Image --*/
+.fixed-background {
+  position: relative;
+  width: 100%;
+  z-index: 1000!important;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999 !important;
+}
+.fixed {
+  z-index: -999!important;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+}
